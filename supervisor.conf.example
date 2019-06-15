@@ -1,0 +1,7 @@
+[program:gravityinfraredco2sensor]
+command=python3 -m gravityinfraredco2sensor
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/home/pi/app/gravityinfraredco2sensor.log
+user=pi
+environment = GRAVITYINFRAREDCO2SENSOR="/home/pi/app/gravityinfraredco2sensor.conf",GRAVITYINFRAREDCO2SENSOR_LOGGER="/home/pi/app/gravityinfraredco2sensor.conf.json"
